@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Factura</class>
+ <widget class="QDialog" name="Factura">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>481</width>
+    <height>612</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>FACTURA</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="Recursos.qrc">
+    <normaloff>:/Recursos/recipt.png</normaloff>:/Recursos/recipt.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
+border-color: rgb(255, 255, 255);</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0" colspan="3">
+    <widget class="QPlainTextEdit" name="outFactura">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(253, 253, 150);
+font: 8pt &quot;Verdana&quot;;
+color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>260</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="1" column="1">
+    <widget class="QPushButton" name="btnGuardar">
+     <property name="styleSheet">
+      <string notr="true">border-color: rgb(255, 255, 255);
+background-color: rgb(75, 75, 75);
+font: 75 10pt &quot;Verdana&quot;;
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Guardar</string>
+     </property>
+     <property name="icon">
+      <iconset resource="Recursos.qrc">
+       <normaloff>:/Recursos/disco-flexible.png</normaloff>:/Recursos/disco-flexible.png</iconset>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2">
+    <widget class="QPushButton" name="btnSalir">
+     <property name="styleSheet">
+      <string notr="true">border-color: rgb(255, 255, 255);
+background-color: rgb(75, 75, 75);
+font: 75 10pt &quot;Verdana&quot;;
+color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Salir</string>
+     </property>
+     <property name="icon">
+      <iconset resource="Recursos.qrc">
+       <normaloff>:/Recursos/boton.png</normaloff>:/Recursos/boton.png</iconset>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="Recursos.qrc"/>
+ </resources>
+ <connections/>
+</ui>
